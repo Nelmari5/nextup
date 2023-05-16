@@ -1,0 +1,156 @@
+@layout('Admin/templates/master')
+
+@section('content')
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand nav-img" href="/">
+          <img src="/assets/images/logo.png"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          
+          <span class="navbar-text">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#how-to">How to</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/login"><button>Login</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/register"><button>Register</button></a>
+              </li>
+            </ul>
+          </span>
+        </div>
+    </div>
+  </nav>
+
+  <video autoplay muted loop playsinline="playsinline" id="myVideo" width="100%">
+    <source src="/assets/videos/homeBanner.mp4" type="video/mp4">
+    <source src="/assets/videos/homeBanner.mp4" type="video/webm">
+  </video>
+
+  <section id="header" class="header" style="height: 800px; background-position: center; background-repeat: no-repeat; background-size: cover; position: absolute; top: 200px; left: 10%;">
+    <div class="heading_first">
+      <div class="container">
+        <h1 class="wow fadeInLeft" data-wow-delay="0.1s" data-wow-duration="1.4s" style="font-weight:200;">Next Up</h1>
+        <h1 class="wow fadeInLeft playItForward" data-wow-delay="0.1s" data-wow-duration="1.4s"><strong> Play It Forward. </strong></h1>
+        <a href="/register"><button class="wow slideInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">Join NextUp <span class="fa fa-arrow"></span> </button></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="about">
+    <div class="container">
+      <div class="row" style="align-items: center; padding: 30px;">
+        <div class="col-md-6 wow slideInUp" data-wow-delay="1.3s" data-wow-duration="1.4s">
+          <img src="/assets/images/img01.png" alt="">
+        </div>
+        <div class="col-md-6 details wow fadeInUp">
+          <h2>NEXT UP, growing fruits of wealth</h2>
+          <p>We elevate people by growing digital crypto fruits of wealth, giving you a crypto orchard to harvest through our digital platform.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how-to">
+    <div class="container">
+
+      <div class="heading wow fadeInUp">
+        <h2>How To</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6 col-xs-12 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          <div class="howTo_deets">
+            <div class="col-xs-2 col-md-2">
+              <span class="dot">1</span>
+            </div>
+            <div class="content-mobile col-md-10">
+              <h4>Our <br>
+                Orchard</h4>
+              <p>In our Digital Crypto Orchard we have
+                a variety of crypto fruit trees to choose
+                from, all, to satisfy your appetite.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-xs-12 col-md-6 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+          <div class="howTo_deets">
+            <div class="col-xs-2 col-md-2">
+              <span class="dot">2</span>
+            </div>
+            <div class="content-mobile col-md-10">
+              <h4>Sowing Seeds <br> For Future Harvest</h4>
+              <p>Next Up has a constitution which guides you to sow your 
+                seed in our Orchad. Your seed allows you to turn a 
+                blossom into a fruit, and once you are Next Up, you can harvest the fruits.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xs-12 wow bounceInUp" data-wow-delay="0.3s" data-wow-duration="1.4s">
+          <div class="howTo_deets">
+            <div class="col-md-2">
+              <span class="dot">3</span>
+            </div>
+            <div class="content-mobile col-md-10">
+              <h4>My <br>
+                Harvest</h4>
+              <p>...will be harvested directly into your
+                SAFCOIN Basket.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xs-12 wow bounceInUp" data-wow-delay="0.4s" data-wow-duration="1.4s">
+          <div class="howTo_deets">
+            <div class="col-md-2">
+              <span class="dot">4</span>
+            </div>
+            <div class="content-mobile col-md-10">
+              <h4>Planing For <br>
+                The Future</h4>
+              <p>I can Sow seeds from my newly harvested fruits out 
+                of my SAFCOIN Basket, back into my Next Up Digital 
+                Crypto Orchard Basket. OR, I can take my newly 
+                harvested crypto fruits from my SAFCOIN Basket 
+                home. OR, I can do both...</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="footer_widget" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="footer_links">
+            <li><br/><br/><a href="/terms">NEXT UP Terms and conditions</a></li>
+			<li><br/><br/>Support: <a href="mailto:support@nextup.zone">support@nextup.zone</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+@endsection

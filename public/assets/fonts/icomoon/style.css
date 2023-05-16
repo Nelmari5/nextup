@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?8fjmvu');
+  src:  url('fonts/icomoon.eot?8fjmvu#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?8fjmvu') format('truetype'),
+    url('fonts/icomoon.woff?8fjmvu') format('woff'),
+    url('fonts/icomoon.svg?8fjmvu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+  color: #464fbf;
+}
+.icon-kids:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-leaderboard:before {
+  content: "\e902";
+  color: #fff;
+}
+.icon-more:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-playlist:before {
+  content: "\e904";
+  color: #464fbf;
+}
+.icon-points:before {
+  content: "\e905";
+  color: #fff;
+}
+.icon-poll:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-profile:before {
+  content: "\e907";
+  color: #464fbf;
+}
+.icon-refereFriend:before {
+  content: "\e908";
+  color: #fff;
+}
+.icon-register:before {
+  content: "\e909";
+  color: #fff;
+}
+.icon-spin:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-trivia:before {
+  content: "\e90b";
+  color: #fff;
+}
+.icon-videos:before {
+  content: "\e90c";
+  color: #fff;
+}

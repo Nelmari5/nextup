@@ -1,0 +1,40 @@
+@layout('Admin/templates/auth')
+
+@section('content')
+<div class="login-box">
+
+    <div class="container register_container" style="height: 800px; background-position: center; background-repeat: no-repeat; background-size: cover; position: absolute; top: 200px; left: 10%;">
+        <div class="heading_first">
+            <div class="container">
+                <h1 style="font-weight:200;">Verify</h1>
+                <h1 class="playItForward"><strong>Code here</strong></h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body login-card-body">
+
+                <form action="/admin/validate" method="post">
+                    
+                    <h2>Add your Code</h2>
+
+                    <div class="input-group mb-3">
+                        <input type="text" name="validationKey" class="form-control" placeholder="Validation Code">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="submit" style="color:white;" class="btn btn-gradient-login btn-block">Submit</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="back_home center">
+                    <a href="/">  <span class="fa fa-angle-left"></span> <i>Go back Home</i> </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@endsection

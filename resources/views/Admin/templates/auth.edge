@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Next Up</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favi.png">
+
+  {{ style('/Admin/css/all') }}
+  {{ style('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min') }}
+  {{ style('/Admin/css/adminlte.min') }}
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  {{ style('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css') }}
+  {{ style('/assets/css/sweetalert2-theme-bootstrap-4/bootstrap-4.min') }}
+  {{ style('/Admin/css/pagination') }}
+  {{ script('//cdn.ckeditor.com/4.6.1/basic/ckeditor')}}
+</head>
+<body id="login-page" class="hold-transition login-page" style="background:url(/assets/images/login-bg.png); background-repeat: no-repeat; background-size: cover;">
+  
+  <div id="vidsRegister">
+    <video autoplay muted loop playsinline="playsinline">
+      <source src="/assets/videos/loginBanner.mp4" type="video/mp4">
+      <source src="/assets/videos/loginBanner.mp4" type="video/webm">
+    </video>
+  </div>
+
+  @if(flashMessage('notification'))
+    <div class="alert bg-success text-white front_messages alert-dismissible fade show" role="alert">
+      <h4>
+        Well done!
+      </h4>
+      <p>{{ flashMessage('notification') }}</p>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  @endif
+
+  @if(flashMessage('error'))
+    <div class="alert bg-danger text-white front_messages alert-dismissible fade show" role="alert">
+      <h4>
+        There is a problem
+      </h4>
+      @each(erro in flashMessage('error'))
+        <p>{{ erro }}</p><br>
+      @endeach
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  @endif
+
+  @section('content')
+  @endsection
+
+  @section('scripts')
+  @endsection
+  
+  {{ script('https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js') }}
+  {{ script('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js') }}
+  {{ script('/Admin/assets/scripts/adminlte') }}
+
+</body>
+</html>
+

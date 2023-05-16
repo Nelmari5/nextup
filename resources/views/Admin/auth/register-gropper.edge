@@ -1,0 +1,61 @@
+@layout('Admin/templates/auth')
+
+@section('content')
+<div class="login-box">
+
+    <div class="container register_container" style="height: 800px; background-position: center; background-repeat: no-repeat; background-size: cover; position: absolute; top: 200px; left: 10%;">
+        <div class="heading_first">
+            <div class="container">
+                <h1 style="font-weight:200;">You Are</h1>
+                <h1 class="playItForward"><strong>Registering As</strong></h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body login-card-body">
+
+                <form action="/admin/register" method="POST">
+
+                    <h2>Gropper</h2>
+                    <input type="hidden" name="type" value="P">
+                    <input type="hidden" name="country" value="ZA">
+
+                    <div class="input-group mb-3">
+                        <input type="email" name="emailaddress" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="email" name="confirmemailaddress" class="form-control" placeholder="Confirm Email" required>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" name="confirmpassword" class="form-control" placeholder="Confirm Password" required>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="icheck-primary">
+                            <input type="checkbox" name="terms" required>
+                            <label for="terms">
+                                &nbsp;I agree to the NEXT UP terms and conditions
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="submit" style="color:white;" class="btn btn-gradient-login btn-block">Submit</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="back_home center">
+                    <a href="/">  <span class="fa fa-angle-left"></span> <i>Go back Home</i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@endsection

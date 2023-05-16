@@ -1,0 +1,52 @@
+@layout('Admin/templates/auth')
+
+@section('content')
+<div class="login-box">
+
+    <div class="container regsiter_blocks_options" style="height: 800px; background-position: center; background-repeat: no-repeat; background-size: cover; position: absolute; top: 200px; left: 10%;">
+        <div class="heading_first heading_register">
+            <div class="container">
+                <h1 style="font-weight:200;">Register</h1>
+                <h1 class="playItForward"><strong> As What? </strong></h1>
+            </div>
+        </div>
+
+        <div class="container registerCard">
+            <div class="row">
+
+                <div class="card col-md-5">
+                    <div class="card-body register-card-body center">
+            
+                        <h2>Grower</h2>
+                        <p>Growers play our multi pay it forward btc 
+                            network game, therefore growing their btc blossoms into juicy crypto fruits to be harvested.</p>
+                        <div class="col-12">
+                            <a href="/register-grower"><button class="btn btn-gradient-login btn-block">Register</button></a>
+                        </div>
+            
+                    </div>
+                </div>
+
+                <h2 class="or_heading">OR</h2>
+            
+                <div class="card col-md-5">
+                    <div class="card-body register-card-body center">
+            
+                        <h2>Gropper</h2>
+                        <p>Groppers are people that invite people to play the game. They will receive a 5% referral commission for each person that become a grower and play.
+                            <br>
+                            <br>
+                            <i>(5% of each amount of btc the choose to play) </i>
+                        </p>
+                        <a href="/register-gropper"><button class="btn btn-gradient-login btn-block">Register</button></a>
+            
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@endsection

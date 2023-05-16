@@ -1,0 +1,52 @@
+@layout('Admin/templates/auth')
+
+@section('content')
+<div class="login-box">
+
+    <div class="container register_container" style="height: 800px; background-position: center; background-repeat: no-repeat; background-size: cover; position: absolute; top: 200px; left: 10%;">
+        <div class="heading_first">
+            <div class="container">
+                <h1 style="font-weight:200;">lets get you</h1>
+                <h1 class="playItForward"><strong> logged in </strong></h1>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body login-card-body">
+
+                <form action="/admin/login" method="post">
+
+                    <div class="input-group mb-3">
+                        <input type="email" name="emailAddress" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+                    </div>
+                    <div class="row">
+                    <div class="col-12">
+                        <div class="icheck-primary">
+                            <input type="checkbox" name="remember">
+                            <label for="remember">
+                                Remember Me
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" style="color:white;" class="btn btn-gradient-login btn-block">Sign In</button>
+                    </div>
+                    </div>
+                </form>
+
+                <div class="forgot_link center">
+                    <a href="/forgot-password" style="color:#fff;"> <i> Forgot Password? </i> </a>
+                </div>
+
+                <div class="back_home center">
+                    <a href="/">  <span class="fa fa-angle-left"></span> <i>Go back Home</i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@endsection
